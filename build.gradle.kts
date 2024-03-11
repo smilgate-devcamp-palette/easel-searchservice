@@ -19,11 +19,15 @@ configurations {
 
 repositories {
 	mavenCentral()
+	maven(url = "https://jitpack.io")
 }
 
 extra["springCloudVersion"] = "2023.0.0"
 
 dependencies {
+	// common
+	implementation("com.github.smilgate-devcamp-palette:easel-common-module:v0.0")
+
 	// Kafka
 	implementation("org.springframework.kafka:spring-kafka")
 
